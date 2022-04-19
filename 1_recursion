@@ -1,1 +1,21 @@
 
+public class factorial {
+    public factorial() {
+    }
+
+    public static int factono(int n) {
+        if (n != 1 && n != 0) {
+            int fact1 = factono(n - 1);
+            int factn = n * fact1;
+            return factn;
+        } else {
+            return 1;
+        }
+    }
+
+    public static void main(String[] args) {
+        int n = 5;
+        int ans = factono(n);
+        System.out.println(ans);
+    }
+}
